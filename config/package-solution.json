@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cloudhadi-service-portal-client-side-solution",
+    "id": "bdb8306a-0f07-46eb-8b72-ca7738f96a07",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "cloudhadi-ServicePortal description"
+      },
+      "longDescription": {
+        "default": "cloudhadi-ServicePortal description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "cloudhadi-service-portal Feature",
+        "description": "The feature that activates elements of the cloudhadi-service-portal solution.",
+        "id": "be79c7ff-4666-4066-bdeb-7221a6e157ac",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cloudhadi-service-portal.sppkg"
+  }
+}
