@@ -12,6 +12,7 @@
 - **Localization:** Strings are managed in `loc/`.
 - **Assets:** Images and static files are in `assets/`.
 - **Data Flow:** Components interact with SharePoint lists (e.g., 'Service Portal') via PnPjs. Example: `CreateRequest.tsx` submits form data to a list.
+- **Site Schema:** Check the Schema of SharePoint site in file `SiteSchema\ProvisioningWorkplace.xml` for the structure of lists and fields.
 
 ## Developer Workflows
 - **Install dependencies:** `npm install`
