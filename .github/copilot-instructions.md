@@ -25,13 +25,19 @@
 - **React functional components** with hooks for state management.
 - **Fluent UI** for consistent SharePoint look and feel.
 - **SharePoint REST API**: Use `_spPageContextInfo.webAbsoluteUrl` and request digest for POSTs.
-- **Field Naming:** List fields should match property names in code (e.g., `Title`, `RequestDescription`, `RelatedTo`).
+- **Field Naming:** List fields should match property names in code refer from file `SiteSchema\ProvisioningWorkplace.xml`.
 - **Error Handling:** User feedback is shown in the UI (e.g., success/error messages after form submission).
 
 ## Integration Points
 - **SharePoint Lists:** Data is stored in lists (e.g., 'Service Portal'). Ensure lists/fields exist before deploying.
 - **PnPjs:** Can be used for SharePoint operations (not required, but supported).
 - **Teams:** Teams icons/assets are in `teams/`.
+
+## External Reference
+Refer to the coding patterns and structure from the following project as inspiration:
+- Project: https://github.com/pnp/pnpjs/tree/version-4/samples/spfx-react-components
+- Specifically focus on how React components are structured in `src/components` and state is managed in `src/store`.
+- Use similar patterns for state management and API calls.
 
 ## Example: Adding a Service Request
 - See `CreateRequest.tsx` for the pattern to collect form data and POST to a SharePoint list.

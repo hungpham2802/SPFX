@@ -18,7 +18,7 @@ export default class CloudhadiServicePortal extends React.Component<ICloudhadiSe
   public constructor(props: ICloudhadiServicePortalProps) {
     super(props);
     this.state = {
-      selectedForm: <CreateRequest />
+      selectedForm: <CreateRequest context={this.props.context} />
     };
   }
   public render(): React.ReactElement<ICloudhadiServicePortalProps> {
@@ -27,14 +27,13 @@ export default class CloudhadiServicePortal extends React.Component<ICloudhadiSe
 
     const onMenuClick = (form: any) => {
       this.setState({ selectedForm: form });
-
-    }
+    };
     const _items: ICommandBarItemProps[] = [
       {
         key: 'New',
         text: 'New Request',
         iconProps: { iconName: 'Add' },
-        onClick: () => onMenuClick(<CreateRequest />)
+        onClick: () => onMenuClick(<CreateRequest context={this.props.context} />)
       },
       {
         key: 'View',

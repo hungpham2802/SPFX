@@ -26,7 +26,8 @@ export default class CloudhadiServicePortalWebPart extends BaseClientSideWebPart
       CloudhadiServicePortal,
       {
         description: this.properties.description,
-        userDisplayName: this.context.pageContext.user.displayName
+        userDisplayName: this.context.pageContext.user.displayName,
+        context: this.context
       }
     );
 
