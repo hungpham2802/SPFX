@@ -39,7 +39,7 @@ export default class CloudhadiServicePortal extends React.Component<ICloudhadiSe
         key: 'View',
         text: 'View My Requests',
         iconProps: { iconName: 'GroupedList' },
-        onClick: () => onMenuClick(<ViewMyRequests />)
+  onClick: () => onMenuClick(<ViewMyRequests context={this.props.context} />)
       },
       {
         key: 'FAQ',
